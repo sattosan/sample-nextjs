@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-const Layout = ({ children, title = "Hp by Nextjs" }) => {
+export default function Layout({ children, title = "Hp by Nextjs" }) {
 	return (
 		<div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
 			<Head>
@@ -46,6 +46,4 @@ const Layout = ({ children, title = "Hp by Nextjs" }) => {
 			</footer>
 		</div>
 	);
-};
-
-export default Layout;
+}
